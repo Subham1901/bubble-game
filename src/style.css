@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: rgb(39, 39, 39);
+}
+.main-container {
+  width: 100%;
+  height: 100%;
+
+  color: white;
+}
+.header {
+  border-bottom: 1px solid rgb(103, 103, 103);
+  height: fit-content;
+  width: auto;
+  margin: 0 auto;
+}
+.header-board {
+  padding: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.random-num,
+.score,
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.number {
+  padding: 7px;
+  background-color: #3f3f3f;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+.bubble-container {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bubble:not(:last-child) {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.bubble {
+  cursor: pointer;
+  background-color: #19eefd;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  color: black;
+  font-weight: 700;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in;
+}
+.bubble:hover {
+  background-color: #a8fbff;
+}
+.finalscore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: xx-large;
+}
+.restart {
+  cursor: pointer;
+  font-size: 15px;
+  margin: 10px;
+  border: none;
+  background-color: rgb(254, 94, 94);
+  color: white;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 3px;
+  height: 30px;
+}
